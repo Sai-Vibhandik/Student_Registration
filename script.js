@@ -1,9 +1,9 @@
-// script.js
+
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('studentForm');
     const tableBody = document.querySelector('#studentTable tbody');
 
-    // Load data from local storage
+    // Loading data from local storage
     loadStudents();
 
     form.addEventListener('submit', (e) => {
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // Add student to table and local storage
+        // Adding student to table and local storage
         addStudent(studentName, studentID, email, contactNo);
         form.reset();
     });
